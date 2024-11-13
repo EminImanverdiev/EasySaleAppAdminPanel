@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaPlus, FaSearch } from 'react-icons/fa';
-import { FaPenFancy, FaTrash } from 'react-icons/fa6';
+import { FaMask, FaPenFancy, FaTrash, FaYinYang } from 'react-icons/fa6';
 import Header from '../header/Header';
 import style from './categoryPage.module.css';
 import { useNavigate } from 'react-router';
@@ -109,6 +109,14 @@ const CategoryPage = ({ id }) => {
                       className={style.componentsPage_bottom_main_iconBox_icon}
                       onClick={() => handleDelete(param.parameterId)}
                     />
+                    {param.parameterTypeTitle === "select" && (
+                      <button
+                        className={style.talismanButton}
+                        onClick={() => alert(`Mask düyməsi: ${param.parameterTitle}`)}
+                      >
+                        <FaMask />
+                      </button>
+                    )}
                   </div>
                 </div>
               ))}
