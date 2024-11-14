@@ -1,6 +1,6 @@
-import React ,{useState,useRef}from 'react'
+import React from 'react'
 import { FaShoppingBag } from "react-icons/fa";
-import { HiArrowTrendingUp,HiArrowTrendingDown } from "react-icons/hi2";
+import { HiArrowTrendingUp } from "react-icons/hi2";
 import style from "./mainElement.module.css"
 
 const MainElement = () => {
